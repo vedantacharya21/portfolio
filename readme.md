@@ -4,7 +4,7 @@ A responsive portfolio website showcasing my projects, skills, education, and AI
 
 ## Live Website
 
-https://your-site.netlify.app
+https://vedantacharya.netlify.app/
 
 ## Features
 
@@ -28,7 +28,7 @@ https://your-site.netlify.app
 
 Clone the repository:
 
-git clone https://github.com/vedantacharya/portfolio.git
+git clone https://github.com/vedantacharya21/portfolio.git
 
 Open index.html in your browser.
 
@@ -40,4 +40,4 @@ LinkedIn:
 https://linkedin.com/in/vedant-acharya-71b012374/
 
 GitHub:
-https://github.com/vedantacharya
+https://github.com/vedantacharya21
