@@ -1,0 +1,1540 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   ROOT VARIABLES
+========================================== */
+
+:root{
+
+    --primary:#7c3aed;
+    --secondary:#5b21b6;
+    --accent:#8b5cf6;
+
+    --bg:#050816;
+    --bg2:#0b1120;
+    --bg3:#111827;
+
+    --card:rgba(255,255,255,.06);
+    --border:rgba(255,255,255,.12);
+
+    --text:#ffffff;
+    --text2:#d1d5db;
+
+    --shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--bg),
+        var(--bg2),
+        var(--bg3)
+    );
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+body::-webkit-scrollbar{
+    width:10px;
+}
+
+body::-webkit-scrollbar-track{
+    background:#111827;
+}
+
+body::-webkit-scrollbar-thumb{
+    background:var(--primary);
+    border-radius:20px;
+}
+
+/* ==========================================
+   COMMON
+========================================== */
+
+a{
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.section{
+
+    padding:100px 0;
+
+}
+
+.section-title{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:2.8rem;
+    font-weight:700;
+
+}
+
+.section-title p{
+
+    color:var(--text2);
+    margin-top:10px;
+
+}
+
+/* ==========================================
+   GLASS CARD
+========================================== */
+
+.glass-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.glass-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.custom-navbar{
+
+    background:rgba(5,8,22,.75);
+
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    transition:.4s;
+
+}
+
+.logo-img{
+
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:2px solid var(--primary);
+
+}
+
+.logo-text{
+
+    margin-left:12px;
+
+    color:white;
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+}
+
+.navbar-nav{
+
+    gap:15px;
+
+}
+
+.nav-link{
+
+    color:white !important;
+
+    font-weight:500;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.nav-link:hover{
+
+    color:var(--accent) !important;
+
+}
+
+.nav-link.active{
+
+    color:var(--accent) !important;
+
+}
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-5px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--accent);
+
+    transition:.3s;
+
+}
+
+.nav-link:hover::after{
+
+    width:100%;
+
+}
+
+/* ==========================================
+   RESUME BUTTON
+========================================== */
+
+.resume-btn{
+
+    background:
+    linear-gradient(
+        45deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:white;
+
+    border-radius:12px;
+
+    padding:12px 24px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.resume-btn:hover{
+
+    color:white;
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 0 30px rgba(124,58,237,.7);
+
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero-section{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-top:120px;
+
+}
+
+.hero-subtitle{
+
+    color:var(--accent);
+
+    font-size:1.1rem;
+
+    margin-bottom:10px;
+
+}
+
+.hero-title{
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.hero-title span{
+
+    color:var(--accent);
+
+}
+
+.typing-text{
+
+    color:#c084fc;
+
+    min-height:45px;
+
+    margin-bottom:25px;
+
+}
+
+.hero-description{
+
+    color:var(--text2);
+
+    font-size:1.05rem;
+
+    max-width:650px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-btn{
+
+    padding:14px 30px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--secondary);
+
+}
+
+.btn-outline-light:hover{
+
+    color:white;
+
+}
+
+/* ==========================================
+   HERO IMAGE
+========================================== */
+
+.hero-image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:360px;
+
+    height:360px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid var(--accent);
+
+    box-shadow:
+
+    0 0 60px rgba(124,58,237,.45);
+
+    animation:floatImage 4s ease-in-out infinite;
+
+}
+
+@keyframes floatImage{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+}
+
+/* ==========================================
+   SOCIAL ICONS
+========================================== */
+
+.social-icons{
+
+    margin-top:35px;
+
+    display:flex;
+
+    gap:18px;
+
+}
+
+.social-icons a{
+
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    color:white;
+
+    background:rgba(255,255,255,.08);
+
+    font-size:20px;
+
+    transition:.4s;
+
+}
+
+.social-icons a:hover{
+
+    background:var(--primary);
+
+    transform:translateY(-5px);
+
+}
+/* ==========================================
+   ABOUT SECTION
+========================================== */
+
+#about .glass-card{
+
+    text-align:left;
+
+    padding:40px;
+
+}
+
+#about p{
+
+    color:var(--text2);
+
+    margin-bottom:18px;
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+}
+
+#about p:last-child{
+
+    margin-bottom:0;
+
+}
+
+/* ==========================================
+   EDUCATION SECTION
+========================================== */
+
+.education-card{
+
+    height:100%;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.education-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--accent)
+    );
+
+}
+
+.education-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(124,58,237,.15);
+
+    color:var(--accent);
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+}
+
+.education-card h3{
+
+    font-size:1.5rem;
+
+    margin-bottom:8px;
+
+    color:white;
+
+}
+
+.education-card h5{
+
+    color:var(--accent);
+
+    margin-bottom:12px;
+
+    font-weight:600;
+
+}
+
+.education-year{
+
+    color:#c084fc;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.education-card p{
+
+    color:var(--text2);
+
+}
+
+
+
+/* ==========================================
+   SKILLS SECTION
+========================================== */
+
+.skill-card{
+
+    height:100%;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.skill-icon{
+
+    width:75px;
+
+    height:75px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(124,58,237,.15);
+
+    color:var(--accent);
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+}
+
+.skill-card h4{
+
+    color:white;
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
+}
+
+.skill-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.skill-card ul li{
+
+    color:var(--text2);
+
+    padding:8px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+    transition:.3s;
+
+}
+
+.skill-card ul li:last-child{
+
+    border-bottom:none;
+
+}
+
+.skill-card ul li:hover{
+
+    color:white;
+
+    padding-left:6px;
+
+}
+
+/* ==========================================
+   SECTION SPACING
+========================================== */
+
+.section:nth-child(even){
+
+    background:rgba(255,255,255,.02);
+
+}
+/* ==========================================
+   PROJECTS SECTION
+========================================== */
+
+.project-card{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    transition:0.4s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    border-color:var(--primary);
+}
+
+.project-cover{
+    position:relative;
+    width:100%;
+    height:220px;
+    border-radius:15px;
+    margin-bottom:20px;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(
+        135deg,
+        var(--secondary),
+        var(--primary) 55%,
+        var(--accent)
+    );
+    background-size:200% 200%;
+    animation:coverShift 6s ease infinite;
+}
+
+@keyframes coverShift{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.project-cover-pattern{
+    position:absolute;
+    inset:0;
+    background-image:
+        radial-gradient(rgba(255,255,255,.18) 2px, transparent 2px);
+    background-size:22px 22px;
+    opacity:.5;
+}
+
+.project-cover-icon{
+    position:relative;
+    font-size:4.5rem;
+    color:rgba(255,255,255,.95);
+    text-shadow:0 10px 30px rgba(0,0,0,.35);
+    animation:floatImage 4s ease-in-out infinite;
+}
+
+.project-card:hover .project-cover-icon{
+    transform:scale(1.1) translateY(-6px);
+    transition:.4s;
+}
+
+.project-card h3{
+    color:#fff;
+    font-size:1.4rem;
+    margin-bottom:15px;
+}
+
+.project-card p{
+    color:var(--text2);
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.project-card .tech-stack{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.project-card .tech-stack span{
+    background:rgba(124,58,237,.15);
+    color:var(--accent);
+    padding:8px 14px;
+    border-radius:50px;
+    font-size:.85rem;
+    font-weight:500;
+    transition:.3s;
+}
+
+.project-card .tech-stack span:hover{
+    background:var(--primary);
+    color:#fff;
+}
+
+.project-buttons{
+    margin-top:auto;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.project-buttons .btn{
+    flex:1;
+    border-radius:12px;
+    padding:12px 18px;
+    font-weight:600;
+    transition:.35s;
+}
+
+.project-buttons .btn-primary{
+    background:linear-gradient(
+        45deg,
+        var(--primary),
+        var(--secondary)
+    );
+    border:none;
+}
+
+.project-buttons .btn-primary:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(124,58,237,.4);
+}
+
+.project-buttons .btn-outline-light:hover{
+    background:#fff;
+    color:#000;
+}
+
+/* ==========================================
+   INTERNSHIP SECTION
+========================================== */
+
+#internship .glass-card{
+    padding:40px;
+}
+
+#internship h3{
+    color:#fff;
+    margin-bottom:8px;
+}
+
+#internship h5{
+    color:var(--accent);
+    margin-bottom:12px;
+}
+
+#internship .text-muted{
+    color:#bfbfbf !important;
+    margin-bottom:25px;
+}
+
+#internship ul{
+    padding-left:20px;
+    margin:0;
+}
+
+#internship ul li{
+    margin-bottom:15px;
+    color:var(--text2);
+    line-height:1.8;
+}
+
+#internship ul li::marker{
+    color:var(--accent);
+}
+
+/* ==========================================
+   CAREER OBJECTIVE
+========================================== */
+
+#career .glass-card{
+    text-align:center;
+    padding:45px;
+}
+
+#career h3{
+    color:#fff;
+    margin-bottom:20px;
+}
+
+#career p{
+    color:var(--text2);
+    font-size:1.05rem;
+    line-height:2;
+}
+
+#career strong{
+    color:var(--accent);
+}
+
+/* ==========================================
+   GLASS CARD HOVER EFFECT
+========================================== */
+
+.project-card:hover,
+.education-card:hover,
+.skill-card:hover{
+
+    box-shadow:
+        0 15px 40px rgba(124,58,237,.20);
+
+}
+
+/* ==========================================
+   BUTTON ICON SPACING
+========================================== */
+
+.project-buttons i{
+    margin-right:8px;
+}
+
+/* ==========================================
+   SECTION ANIMATION DEFAULT
+========================================== */
+
+.skill-card,
+.project-card,
+.education-card,
+.glass-card{
+
+    opacity:0;
+    transform:translateY(40px);
+
+}
+/* ==========================================
+   CONTACT SECTION
+========================================== */
+
+.contact-card{
+    text-align:center;
+    padding:45px;
+}
+
+.contact-card h3{
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.contact-card p{
+    color:var(--text2);
+    margin-bottom:15px;
+    font-size:1.05rem;
+}
+
+.contact-card a{
+    color:var(--accent);
+    text-decoration:none;
+    transition:.3s;
+}
+
+.contact-card a:hover{
+    color:#fff;
+}
+
+.contact-info{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:35px;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:rgba(255,255,255,.05);
+    padding:15px 20px;
+    border-radius:14px;
+    border:1px solid var(--border);
+    transition:.3s;
+}
+
+.contact-item:hover{
+    transform:translateY(-5px);
+    border-color:var(--primary);
+}
+
+.contact-item i{
+    font-size:22px;
+    color:var(--accent);
+}
+
+/* ==========================================
+   SOCIAL ICONS
+========================================== */
+
+.social-links{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.social-links a{
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    color:#fff;
+    font-size:20px;
+    transition:.35s;
+    text-decoration:none;
+}
+
+.social-links a:hover{
+    background:var(--primary);
+    transform:translateY(-6px) scale(1.08);
+    box-shadow:0 10px 25px rgba(124,58,237,.45);
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+    background:#050816;
+    padding:35px 20px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+footer p{
+    color:#bfbfbf;
+    margin:0;
+    font-size:.95rem;
+}
+
+footer span{
+    color:var(--accent);
+    font-weight:600;
+}
+
+/* ==========================================
+   SCROLL TO TOP BUTTON
+========================================== */
+
+#scrollTopBtn{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:linear-gradient(
+        45deg,
+        var(--primary),
+        var(--secondary)
+    );
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+    display:none;
+    z-index:999;
+    transition:.3s;
+}
+
+#scrollTopBtn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(124,58,237,.45);
+}
+
+/* ==========================================
+   RESUME BUTTON GLOW
+========================================== */
+
+.resume-btn{
+    position:relative;
+    overflow:hidden;
+}
+
+.resume-btn::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,.25);
+    transition:.6s;
+}
+
+.resume-btn:hover::before{
+    left:100%;
+}
+
+.resume-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 0 30px rgba(124,58,237,.6);
+}
+
+/* ==========================================
+   REVEAL ANIMATION
+========================================== */
+
+.show{
+    opacity:1 !important;
+    transform:translateY(0) !important;
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+body{
+    scrollbar-width:thin;
+    scrollbar-color:var(--primary) #111827;
+}
+
+/* ==========================================
+   RESPONSIVE - 992px
+========================================== */
+
+@media(max-width:992px){
+
+    .hero-section{
+        text-align:center;
+        padding-top:130px;
+    }
+
+    .hero-image{
+        margin-bottom:40px;
+    }
+
+    .social-icons{
+        justify-content:center;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .contact-info{
+        flex-direction:column;
+        align-items:center;
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE - 768px
+========================================== */
+
+@media(max-width:768px){
+
+    .section-title{
+        font-size:2rem;
+    }
+
+    .hero-title{
+        font-size:2.4rem;
+    }
+
+    .typing-text{
+        font-size:1.2rem;
+    }
+
+    .project-buttons{
+        flex-direction:column;
+    }
+
+    .project-buttons .btn{
+        width:100%;
+    }
+
+    .contact-item{
+        width:100%;
+        justify-content:center;
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE - 576px
+========================================== */
+
+@media(max-width:576px){
+
+    .hero-title{
+        font-size:2rem;
+    }
+
+    .hero-image img{
+        width:220px;
+        height:220px;
+    }
+
+    .glass-card{
+        padding:25px;
+    }
+
+    .education-card,
+    .skill-card,
+    .project-card{
+        padding:22px;
+    }
+
+    .contact-card{
+        padding:30px 20px;
+    }
+
+}
+
+/* ==========================================
+   PRELOADER
+========================================== */
+
+.preloader{
+    position:fixed;
+    inset:0;
+    z-index:99999;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    background:var(--bg);
+    transition:opacity .6s ease, visibility .6s ease;
+}
+
+.preloader.hide{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+}
+
+.preloader-ring{
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    border:3px solid var(--border);
+    border-top-color:var(--accent);
+    animation:spin .9s linear infinite;
+}
+
+@keyframes spin{
+    to{transform:rotate(360deg);}
+}
+
+.preloader-text{
+    font-weight:700;
+    letter-spacing:4px;
+    font-size:1.1rem;
+    color:var(--text2);
+    animation:pulseText 1.6s ease-in-out infinite;
+}
+
+@keyframes pulseText{
+    0%,100%{opacity:.5;}
+    50%{opacity:1;}
+}
+
+/* ==========================================
+   SCROLL PROGRESS BAR
+========================================== */
+
+.scroll-progress{
+    position:fixed;
+    top:0;
+    left:0;
+    height:3px;
+    width:0%;
+    background:linear-gradient(90deg, var(--primary), var(--accent), #c084fc);
+    z-index:2000;
+    transition:width .1s linear;
+}
+
+/* ==========================================
+   SECTION TITLE - DECORATIVE UNDERLINE
+========================================== */
+
+.section-title h2{
+    position:relative;
+    display:inline-block;
+    padding-bottom:16px;
+}
+
+.section-title h2::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    width:70px;
+    height:4px;
+    border-radius:4px;
+    background:linear-gradient(90deg, var(--primary), var(--accent));
+    background-size:200% auto;
+    animation:underlineShift 4s ease infinite;
+}
+
+@keyframes underlineShift{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* ==========================================
+   CARD SHINE SWEEP ON HOVER
+========================================== */
+
+.skill-card,
+.project-card,
+.education-card{
+    position:relative;
+    overflow:hidden;
+}
+
+.skill-card::after,
+.project-card::after,
+.education-card::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-150%;
+    width:60%;
+    height:100%;
+    background:linear-gradient(
+        115deg,
+        transparent,
+        rgba(255,255,255,.10),
+        transparent
+    );
+    transform:skewX(-20deg);
+    transition:left .7s ease;
+    pointer-events:none;
+}
+
+.skill-card:hover::after,
+.project-card:hover::after,
+.education-card:hover::after{
+    left:150%;
+}
+
+.skill-icon{
+    transition:transform .4s ease;
+}
+
+.skill-card:hover .skill-icon{
+    transform:scale(1.15) rotate(-6deg);
+}
+
+/* ==========================================
+   STAGGERED REVEAL DELAYS
+========================================== */
+
+.row.g-4 > div:nth-child(1) .glass-card{ transition-delay:0s; }
+.row.g-4 > div:nth-child(2) .glass-card{ transition-delay:.08s; }
+.row.g-4 > div:nth-child(3) .glass-card{ transition-delay:.16s; }
+.row.g-4 > div:nth-child(4) .glass-card{ transition-delay:.24s; }
+.row.g-4 > div:nth-child(5) .glass-card{ transition-delay:.32s; }
+.row.g-4 > div:nth-child(6) .glass-card{ transition-delay:.4s; }
+
+/* ==========================================
+   END OF STYLE.CSS
+========================================== */
+
+/* ==========================================
+   DECORATIVE BACKGROUND BLOBS
+========================================== */
+
+.bg-blobs{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    z-index:-1;
+    pointer-events:none;
+}
+
+.bg-blobs span{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(90px);
+    opacity:.35;
+    animation:blobFloat 18s ease-in-out infinite;
+}
+
+.bg-blobs span:nth-child(1){
+    width:420px;
+    height:420px;
+    top:-100px;
+    left:-100px;
+    background:var(--primary);
+}
+
+.bg-blobs span:nth-child(2){
+    width:380px;
+    height:380px;
+    top:40%;
+    right:-120px;
+    background:var(--accent);
+    animation-delay:-6s;
+}
+
+.bg-blobs span:nth-child(3){
+    width:340px;
+    height:340px;
+    bottom:-120px;
+    left:30%;
+    background:var(--secondary);
+    animation-delay:-11s;
+}
+
+@keyframes blobFloat{
+    0%,100%{transform:translate(0,0) scale(1);}
+    33%{transform:translate(40px,-30px) scale(1.1);}
+    66%{transform:translate(-30px,25px) scale(.95);}
+}
+
+/* ==========================================
+   CURSOR GLOW (SPOTLIGHT FOLLOW EFFECT)
+========================================== */
+
+.cursor-glow{
+    position:fixed;
+    top:0;
+    left:0;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:radial-gradient(
+        circle,
+        rgba(124,58,237,.16),
+        transparent 70%
+    );
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+    z-index:0;
+    transition:opacity .3s;
+    will-change:transform;
+}
+
+@media(hover:none){
+    .cursor-glow{
+        display:none;
+    }
+}
+
+/* ==========================================
+   3D CARD TILT SUPPORT
+========================================== */
+
+.glass-card{
+    transform-style:preserve-3d;
+    will-change:transform;
+}
+
+.glass-card .tilt-inner{
+    transform:translateZ(30px);
+}
+
+/* ==========================================
+   BUTTON RIPPLE EFFECT
+========================================== */
+
+.btn{
+    position:relative;
+    overflow:hidden;
+}
+
+.ripple{
+    position:absolute;
+    border-radius:50%;
+    background:rgba(255,255,255,.5);
+    transform:scale(0);
+    animation:rippleAnim .6s ease-out;
+    pointer-events:none;
+}
+
+@keyframes rippleAnim{
+    to{
+        transform:scale(3);
+        opacity:0;
+    }
+}
+
+/* ==========================================
+   HERO PARTICLE CANVAS
+========================================== */
+
+#particles-canvas{
+    position:absolute;
+    inset:0;
+    z-index:0;
+    pointer-events:none;
+}
+
+.hero-section{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-section .container{
+    position:relative;
+    z-index:1;
+}
+
+/* ==========================================
+   ANIMATED GRADIENT NAME TEXT
+========================================== */
+
+.hero-title span{
+    background:linear-gradient(
+        90deg,
+        var(--accent),
+        #c084fc,
+        var(--primary),
+        var(--accent)
+    );
+    background-size:300% auto;
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    animation:gradientText 6s linear infinite;
+}
+
+@keyframes gradientText{
+    to{
+        background-position:300% center;
+    }
+}
